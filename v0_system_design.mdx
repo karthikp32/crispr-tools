@@ -2,14 +2,24 @@ Goal:
 Create a website that allows CRISPR researchers to find the right tools for their needs quickly.
 
 Scope and Requirements:
-- Let's build for 100 users that search across tools for their needs 2x a day
-- Assume 2 searches per user and 2 filters per user per day for about 200 searches and 200 filters per day
-- Aim for 99% reliability
-- Searching for tools should take 0-100 ms
-- Filtering should take 0-100 ms
-- External link button click should take <= 50 ms
+- Functional Requirements:
+  - Users can view a list of curated CRISPR tools
+  - Users can filter tools by purpose and species
+  - Users can see summary of each CRISPR tool
+  - Users can click external link of each CRISPR tool
+- Non-Functional Requirements
+  - Filtering should take 0-100 ms
+  - External link button click should take <= 50 ms
+  - 99% reliability
+  - Assume 2 filters per user per day for about 200 filters per day
+  - Reliability and latency should be met for variables amount of filters
+
 - List of tools, their summaries, and other metadata should updated nightly
 
 Capacity Estimation and Constraints:
+
+  Storage:
+  Compute:
+  Network Throughput:
 
 API and Data Models:
