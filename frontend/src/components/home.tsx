@@ -354,7 +354,7 @@ const HomePage = () => {
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Use Case 1 */}
+            {/* Use Case: Guide RNA Design */}
             <motion.div
               className="bg-white p-8 rounded-xl shadow-sm border border-gray-100"
               variants={itemVariants}
@@ -378,28 +378,54 @@ const HomePage = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">
-                    Gene Knockout Studies
+                    Guide RNA Design
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    Find the best tools for creating clean knockouts in your
-                    model organism, from design to validation.
+                    Find tools for designing optimal guide RNAs for various CRISPR applications, minimizing off-target effects.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
-                      CRISPOR
-                    </span>
                     <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
                       CHOPCHOP
                     </span>
                     <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
-                      CRISPResso2
+                      CRISPOR
+                    </span>
+                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
+                      GuideScan
+                    </span>
+                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
+                      CRISPR-DO
+                    </span>
+                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
+                      CCTop
+                    </span>
+                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
+                      CRISPRscan
+                    </span>
+                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
+                      CRISPRdirect
+                    </span>
+                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
+                      Benchling CRISPR Tools
+                    </span>
+                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
+                      E-CRISP
+                    </span>
+                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
+                      CRISPR-ERA
+                    </span>
+                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
+                      CasFinder
+                    </span>
+                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
+                      FlashFry
                     </span>
                   </div>
                 </div>
               </div>
             </motion.div>
 
-            {/* Use Case 2 */}
+            {/* Use Case: Editing Analysis */}
             <motion.div
               className="bg-white p-8 rounded-xl shadow-sm border border-gray-100"
               variants={itemVariants}
@@ -423,28 +449,30 @@ const HomePage = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">
-                    Precise Gene Editing
+                    Editing Analysis
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    Discover base editors and prime editors for making specific
-                    nucleotide changes without double-strand breaks.
+                    Analyze CRISPR editing outcomes from sequencing data, including indel and HDR analysis.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
-                      BE-Designer
+                      CRISPResso2
                     </span>
                     <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
-                      PEGFINDER
+                      TIDE
                     </span>
                     <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
-                      ABE-Designer
+                      CRISPRessoPooled
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
+                      Synthego ICE
                     </span>
                   </div>
                 </div>
               </div>
             </motion.div>
 
-            {/* Use Case 3 */}
+            {/* Use Case: Off-target Analysis */}
             <motion.div
               className="bg-white p-8 rounded-xl shadow-sm border border-gray-100"
               variants={itemVariants}
@@ -468,28 +496,30 @@ const HomePage = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">
-                    Gene Expression Modulation
+                    Off-target Analysis
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    Design guide RNAs for CRISPRa, CRISPRi, and other expression
-                    modulation approaches.
+                    Identify and evaluate potential off-target sites for your guide RNAs across the genome.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">
-                      CHOPCHOP
-                    </span>
                     <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">
                       CRISPOR
                     </span>
                     <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">
-                      GuideScan
+                      Cas-OFFinder
+                    </span>
+                    <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">
+                      Off-Spotter
+                    </span>
+                    <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">
+                      GuideSeq
                     </span>
                   </div>
                 </div>
               </div>
             </motion.div>
 
-            {/* Use Case 4 */}
+            {/* Use Case: CRISPR Array Identification */}
             <motion.div
               className="bg-white p-8 rounded-xl shadow-sm border border-gray-100"
               variants={itemVariants}
@@ -513,21 +543,96 @@ const HomePage = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">
-                    Results Analysis
+                    CRISPR Array Identification
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    Analyze your CRISPR editing results with specialized tools
-                    for NGS data and outcome quantification.
+                    Discover tools for identifying CRISPR arrays in prokaryotic genomes.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">
-                      CRISPResso2
+                      CRISPRfinder
                     </span>
-                    <span className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">
-                      TIDE
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Use Case: Laboratory Management */}
+            <motion.div
+              className="bg-white p-8 rounded-xl shadow-sm border border-gray-100"
+              variants={itemVariants}
+            >
+              <div className="flex items-start mb-4">
+                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-orange-100 mr-4 mt-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-orange-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Laboratory Management
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Tools for managing laboratory workflows, data, and resources related to CRISPR experiments.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">
+                      Benchling CRISPR Tools
                     </span>
-                    <span className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">
-                      ICE
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Use Case: Annotation */}
+            <motion.div
+              className="bg-white p-8 rounded-xl shadow-sm border border-gray-100"
+              variants={itemVariants}
+            >
+              <div className="flex items-start mb-4">
+                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-red-100 mr-4 mt-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-red-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Annotation
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Tools for annotating CRISPR experiments and genomic regions.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-red-100 text-red-800 text-sm rounded-full">
+                      CRISPR-ERA
                     </span>
                   </div>
                 </div>
