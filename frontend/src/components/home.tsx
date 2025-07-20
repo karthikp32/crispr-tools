@@ -373,31 +373,30 @@ const HomePage = () => {
                       strokeLinejoin="round"
                       strokeWidth={2}
                       d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">
-                    Gene Knockout Studies
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    Find the best tools for creating clean knockouts in your
-                    model organism, from design to validation.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
-                      CRISPOR
-                    </span>
-                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
-                      CHOPCHOP
-                    </span>
-                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
-                      CRISPResso2
-                    </span>
-                  </div>
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">
+                  Gene Knockout Studies
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Find the best tools for creating clean knockouts in your
+                  model organism, from design to validation.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
+                    CRISPOR
+                  </span>
+                  <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
+                    CHOPCHOP
+                  </span>
+                  <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
+                    CRISPResso2
+                  </span>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             {/* Use Case 2 */}
             <motion.div
@@ -689,28 +688,8 @@ const HomePage = () => {
                 Is this free?
               </AccordionTrigger>
               <AccordionContent>
-                Yes, and it always will be. Our mission is to accelerate CRISPR
-                research by making tool discovery effortless.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-2">
-              <AccordionTrigger className="text-left font-medium">
-                Where does the information come from?
-              </AccordionTrigger>
-              <AccordionContent>
-                All tools are curated by human experts and verified by AI. We
-                regularly review peer-reviewed publications and tool updates.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-3">
-              <AccordionTrigger className="text-left font-medium">
-                How do updates work?
-              </AccordionTrigger>
-              <AccordionContent>
-                The tool database syncs in the background, with no manual
-                refresh needed. New tools and features are added weekly.
+                Yes. The mission is to accelerate CRISPR
+                research/innovations/applications by making tool discovery effortless.
               </AccordionContent>
             </AccordionItem>
 
@@ -723,39 +702,6 @@ const HomePage = () => {
                 zebrafish, drosophila, C. elegans, yeast, and many plant
                 species. New organisms are added regularly based on community
                 requests.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-5">
-              <AccordionTrigger className="text-left font-medium">
-                Can I suggest new tools?
-              </AccordionTrigger>
-              <AccordionContent>
-                Absolutely! We welcome suggestions for new tools. Contact us
-                with the tool name, publication, and brief description. Our team
-                reviews all submissions for inclusion in the database.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-6">
-              <AccordionTrigger className="text-left font-medium">
-                How accurate are the tool recommendations?
-              </AccordionTrigger>
-              <AccordionContent>
-                Our recommendations are based on peer-reviewed literature, tool
-                documentation, and community feedback. We continuously validate
-                and update our database to ensure accuracy and relevance.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-7">
-              <AccordionTrigger className="text-left font-medium">
-                Do you provide technical support?
-              </AccordionTrigger>
-              <AccordionContent>
-                While we don't provide direct technical support for individual
-                tools, we offer comprehensive guides, links to documentation,
-                and community resources to help you get started with each tool.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
