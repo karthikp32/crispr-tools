@@ -393,33 +393,6 @@ const HomePage = () => {
                     <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
                       GuideScan
                     </span>
-                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
-                      CRISPR-DO
-                    </span>
-                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
-                      CCTop
-                    </span>
-                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
-                      CRISPRscan
-                    </span>
-                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
-                      CRISPRdirect
-                    </span>
-                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
-                      Benchling CRISPR Tools
-                    </span>
-                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
-                      E-CRISP
-                    </span>
-                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
-                      CRISPR-ERA
-                    </span>
-                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
-                      CasFinder
-                    </span>
-                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
-                      FlashFry
-                    </span>
                   </div>
                 </div>
               </div>
