@@ -1,0 +1,142 @@
+[
+  {
+    "name": "CRISPResso2",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["Editing Analysis"],
+    "summary": "Pipeline for analyzing genome editing outcomes (indels, HDR, base edits) from sequencing data.",
+    "external_link": "https://crispresso2.pinellolab.org/"
+  },
+  {
+    "name": "CHOPCHOP",
+    "species": ["Human", "Mouse", "Zebrafish", "Other"],
+    "purpose": ["Guide RNA Design"],
+    "summary": "User-friendly web tool for optimizing CRISPR guide RNAs across species.",
+    "external_link": "https://chopchop.cbu.uib.no/"
+  },
+  {
+    "name": "CRISPOR",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["Guide RNA Design", "Off-target Analysis"],
+    "summary": "Designs optimal CRISPR guide RNAs and evaluates off-target scores across genomes.",
+    "external_link": "http://crispor.tefor.net/"
+  },
+  {
+    "name": "Cas-OFFinder",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["Off-target Analysis"],
+    "summary": "Fast search engine for potential CRISPR off-target cleavage sites.",
+    "external_link": "http://www.rgenome.net/cas-offinder/"
+  },
+  {
+    "name": "GuideScan",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["Guide RNA Design"],
+    "summary": "High-specificity guide RNA design tool minimizing off-target effects.",
+    "external_link": "https://guidescan.com/"
+  },
+  {
+    "name": "CRISPR-DO",
+    "species": ["Human", "Mouse"],
+    "purpose": ["Guide RNA Design"],
+    "summary": "Designs guide RNAs efficiently with built-in off-target prediction.",
+    "external_link": "http://crispr-do.org/"
+  },
+  {
+    "name": "CCTop",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["Guide RNA Design"],
+    "summary": "Flexible CRISPR target finder with custom genome support.",
+    "external_link": "https://crispr.cos.uni-heidelberg.de"
+  },
+  {
+    "name": "Off-Spotter",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["Off-target Analysis"],
+    "summary": "Enumerates genomic look-alikes for guide RNAs quickly.",
+    "external_link": "https://cm.jefferson.edu/Off-Spotter/"
+  },
+  {
+    "name": "CRISPRscan",
+    "species": ["Human", "Mouse", "Zebrafish"],
+    "purpose": ["Guide RNA Design"],
+    "summary": "Predicts high-activity sgRNAs for in vivo CRISPR experiments.",
+    "external_link": "https://www.crisprscan.org/"
+  },
+  {
+    "name": "CRISPRdirect",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["Guide RNA Design"],
+    "summary": "Designs guide RNAs with reduced off-target potential.",
+    "external_link": "https://crispr.dbcls.jp/"
+  },
+  {
+    "name": "Benchling CRISPR Tools",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["Guide RNA Design", "Laboratory Management"],
+    "summary": "Integrated lab platform for guide design and data tracking.",
+    "external_link": "https://benchling.com/crispr"
+  },
+  {
+    "name": "E-CRISP",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["Guide RNA Design"],
+    "summary": "sgRNA design tool with genome browser and off-target checks.",
+    "external_link": "http://www.e-crisp.org/E-CRISP/"
+  },
+  {
+    "name": "CRISPR-ERA",
+    "species": ["Human", "Mouse"],
+    "purpose": ["Guide RNA Design", "Annotation"],
+    "summary": "Platform for designing and annotating CRISPR editing experiments.",
+    "external_link": "http://crispr-era.stanford.edu/"
+  },
+  {
+    "name": "CasFinder",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["Guide RNA Design"],
+    "summary": "Finds CRISPR target sites and evaluates off-target potential.",
+    "external_link": "https://www.rgenome.net/casfinder/"
+  },
+  {
+    "name": "TIDE",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["Editing Efficiency Analysis"],
+    "summary": "Analyzes CRISPR editing efficiency from Sanger sequencing (indel decomposition).",
+    "external_link": "https://tide.nki.nl/"
+  },
+  {
+    "name": "GuideSeq",
+    "species": ["Human", "Mouse"],
+    "purpose": ["Off-target Analysis"],
+    "summary": "Experimental-computational pipeline for genome-wide off-target site detection.",
+    "external_link": "https://www.guideseq.org/"
+  },
+  {
+    "name": "CRISPRessoPooled",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["Editing Analysis"],
+    "summary": "Extension of CRISPResso for pooled amplicon editing experiments.",
+    "external_link": "https://crispresso2.pinellolab.org/submission/pooled"
+  },
+  {
+    "name": "Synthego ICE",
+    "species": ["Human", "Mouse"],
+    "purpose": ["Editing Analysis"],
+    "summary": "Analyzes CRISPR editing outcomes from Sanger data (Inference of CRISPR Edits).",
+    "external_link": "https://ice.synthego.com/"
+  },
+  {
+    "name": "FlashFry",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["Guide RNA Design"],
+    "summary": "Fast and flexible command-line tool for large-scale guide RNA design.",
+    "external_link": "https://github.com/mckennalab/FlashFry"
+  },
+  {
+    "name": "CRISPRfinder",
+    "species": ["Bacteria", "Archaea"],
+    "purpose": ["CRISPR Array Identification"],
+    "summary": "Detects CRISPR repeat arrays in prokaryotic genomes.",
+    "external_link": "https://crispr.i2bc.paris-saclay.fr/Server/"
+  }
+]

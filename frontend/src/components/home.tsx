@@ -468,21 +468,21 @@ const HomePage = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">
-                    Gene Activation & Repression
+                    Gene Expression Modulation
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    Find CRISPRa and CRISPRi tools to modulate gene expression
-                    without permanent DNA changes.
+                    Design guide RNAs for CRISPRa, CRISPRi, and other expression
+                    modulation approaches.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">
                       CHOPCHOP
                     </span>
                     <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">
-                      CRISPRa-ML
+                      CRISPOR
                     </span>
                     <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">
-                      CRISPRi-ML
+                      GuideScan
                     </span>
                   </div>
                 </div>
