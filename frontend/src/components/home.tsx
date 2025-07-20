@@ -215,7 +215,7 @@ const HomePage = () => {
                 Comprehensive Database
               </h3>
               <p className="text-gray-600">
-                Access 50+ curated CRISPR tools with detailed descriptions and
+                Access 20 curated CRISPR tools with detailed descriptions and
                 usage guidelines.
               </p>
             </motion.div>
@@ -726,11 +726,11 @@ const HomePage = () => {
             variants={containerVariants}
           >
             <motion.div className="text-center" variants={itemVariants}>
-              <div className="text-3xl font-bold text-teal-600 mb-2">50+</div>
+              <div className="text-3xl font-bold text-teal-600 mb-2">20</div>
               <p className="text-gray-600">Curated Tools</p>
             </motion.div>
             <motion.div className="text-center" variants={itemVariants}>
-              <div className="text-3xl font-bold text-teal-600 mb-2">20+</div>
+              <div className="text-3xl font-bold text-teal-600 mb-2">6</div>
               <p className="text-gray-600">Supported Species</p>
             </motion.div>
             <motion.div className="text-center" variants={itemVariants}>
