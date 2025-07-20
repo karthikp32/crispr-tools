@@ -51,7 +51,7 @@ const HomePage = () => {
             className="text-2xl md:text-3xl font-bold text-center mb-12"
             variants={itemVariants}
           >
-            Why Researchers Choose Our Tool Finder
+            How This Tool Finder Helps Researchers
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -134,7 +134,7 @@ const HomePage = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Blazing Fast</h3>
               <p className="text-gray-600">
-                Cached in your browser, updated nightly by AI for instant
+                Local database with nightly AI updates for instant
                 access.
               </p>
             </motion.div>
@@ -639,10 +639,8 @@ const HomePage = () => {
             className="text-lg text-gray-600 max-w-3xl mx-auto mb-8"
             variants={itemVariants}
           >
-            Our tool finder is designed to save researchers time by providing
-            instant access to curated CRISPR tools. We're committed to
-            supporting the scientific community with accurate, up-to-date
-            information.
+            This tool finder is designed to save researchers time by providing
+            instant access to curated CRISPR tools. 
           </motion.p>
 
           <motion.div
