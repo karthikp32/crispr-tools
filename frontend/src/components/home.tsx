@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import HeroSection from "./HeroSection";
 import PreviewSection from "./PreviewSection";
 import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 import {
   Accordion,
   AccordionContent,
@@ -802,12 +803,14 @@ const HomePage = () => {
           </motion.h2>
 
           <motion.div variants={itemVariants}>
-            <Button
-              size="lg"
-              className="rounded-full text-lg px-8 py-6 h-auto bg-teal-600 hover:bg-teal-700"
-            >
-              🔍 Launch Tool Finder
-            </Button>
+            <Link to="/tools">
+              <Button
+                size="lg"
+                className="rounded-full text-lg px-8 py-6 h-auto bg-teal-600 hover:bg-teal-700"
+              >
+                🔍 Launch Tool Finder
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </motion.section>
