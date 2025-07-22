@@ -18,19 +18,19 @@ const PreviewSection = ({
       name: "CRISPOR",
       summary: "Design sgRNAs with off-target analysis for human/mouse",
       species: ["human", "mouse"],
-      link: "#crispor",
+      link: "http://crispor.tefor.net/",
     },
     {
       name: "CHOPCHOP",
       summary: "Knockout or activate genes across dozens of species",
       species: ["human", "mouse", "zebrafish", "drosophila"],
-      link: "#chopchop",
+      link: "https://chopchop.cbu.uib.no/",
     },
     {
       name: "CRISPResso2",
       summary: "Analyze NGS results after editing",
       species: ["human", "mouse", "rat"],
-      link: "#crisprresso2",
+      link: "https://crispresso2.pinellolab.org/",
     },
   ],
 }: PreviewSectionProps) => {
