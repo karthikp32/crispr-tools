@@ -85,33 +85,6 @@ const HomePage = () => {
             </motion.div>
 
             {/* Benefit 2 */}
-            <motion.div
-              className="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm"
-              variants={itemVariants}
-            >
-              <div className="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-blue-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Trusted Sources</h3>
-              <p className="text-gray-600">
-                Based on peer-reviewed tools like CHOPCHOP, CRISPOR,
-                CRISPResso2.
-              </p>
-            </motion.div>
-
             {/* Benefit 3 */}
             <motion.div
               className="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm"
@@ -135,10 +108,37 @@ const HomePage = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Blazing Fast</h3>
               <p className="text-gray-600">
-                Local database with nightly AI updates for instant
-                access.
+                Get immediate results and spend less time searching.
               </p>
             </motion.div>
+
+            <motion.div
+              className="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm"
+              variants={itemVariants}
+            >
+              <div className="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-8 text-blue-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Trusted Sources</h3>
+              <p className="text-gray-600">
+                Based on peer-reviewed tools like <a href="https://chopchop.cbu.uib.no/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">CHOPCHOP</a>, <a href="http://crispor.tefor.net/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">CRISPOR</a>, and <a href="https://crispresso2.pinellolab.org/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">CRISPResso2</a>.
+              </p>
+            </motion.div>
+
+            
           </div>
         </div>
       </motion.section>
@@ -213,7 +213,7 @@ const HomePage = () => {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold mb-2">
-                Comprehensive Database
+                Curated CRISPR Toolkit
               </h3>
               <p className="text-gray-600">
                 Access 20 curated CRISPR tools with detailed descriptions and
@@ -221,33 +221,7 @@ const HomePage = () => {
               </p>
             </motion.div>
 
-            {/* Feature 3 */}
-            <motion.div
-              className="flex flex-col items-start p-6 bg-gray-50 rounded-xl"
-              variants={itemVariants}
-            >
-              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-green-100 mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-green-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold mb-2">Always Updated</h3>
-              <p className="text-gray-600">
-                Automatic updates ensure you always have access to the latest
-                tools and versions.
-              </p>
-            </motion.div>
+            
 
             {/* Feature 4 */}
             <motion.div
@@ -274,36 +248,6 @@ const HomePage = () => {
               <p className="text-gray-600">
                 One-click access to tools with direct links and detailed usage
                 instructions.
-              </p>
-            </motion.div>
-
-            {/* Feature 5 */}
-            <motion.div
-              className="flex flex-col items-start p-6 bg-gray-50 rounded-xl"
-              variants={itemVariants}
-            >
-              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-orange-100 mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-orange-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold mb-2">
-                AI-Powered Recommendations
-              </h3>
-              <p className="text-gray-600">
-                Get personalized tool suggestions based on your research goals
-                and organism.
               </p>
             </motion.div>
 
@@ -385,15 +329,9 @@ const HomePage = () => {
                     Find tools for designing optimal guide RNAs for various CRISPR applications, minimizing off-target effects.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
-                      CHOPCHOP
-                    </span>
-                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
-                      CRISPOR
-                    </span>
-                    <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">
-                      GuideScan
-                    </span>
+                    <a href="https://chopchop.cbu.uib.no/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full hover:bg-teal-200">CHOPCHOP</a>
+                    <a href="http://crispor.tefor.net/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full hover:bg-teal-200">CRISPOR</a>
+                    <a href="https://guidescan.com/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full hover:bg-teal-200">GuideScan</a>
                   </div>
                 </div>
               </div>
@@ -429,18 +367,10 @@ const HomePage = () => {
                     Analyze CRISPR editing outcomes from sequencing data, including indel and HDR analysis.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
-                      CRISPResso2
-                    </span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
-                      TIDE
-                    </span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
-                      CRISPRessoPooled
-                    </span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
-                      Synthego ICE
-                    </span>
+                    <a href="https://crispresso2.pinellolab.org/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full hover:bg-blue-200">CRISPResso2</a>
+                    <a href="https://tide.nki.nl/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full hover:bg-blue-200">TIDE</a>
+                    <a href="https://crispresso2.pinellolab.org/submission/pooled" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full hover:bg-blue-200">CRISPRessoPooled</a>
+                    <a href="https://ice.synthego.com/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full hover:bg-blue-200">Synthego ICE</a>
                   </div>
                 </div>
               </div>
@@ -476,18 +406,10 @@ const HomePage = () => {
                     Identify and evaluate potential off-target sites for your guide RNAs across the genome.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">
-                      CRISPOR
-                    </span>
-                    <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">
-                      Cas-OFFinder
-                    </span>
-                    <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">
-                      Off-Spotter
-                    </span>
-                    <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">
-                      GuideSeq
-                    </span>
+                    <a href="http://crispor.tefor.net/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full hover:bg-green-200">CRISPOR</a>
+                    <a href="http://www.rgenome.net/cas-offinder/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full hover:bg-green-200">Cas-OFFinder</a>
+                    <a href="https://cm.jefferson.edu/Off-Spotter/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full hover:bg-green-200">Off-Spotter</a>
+                    <a href="https://www.guideseq.org/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full hover:bg-green-200">GuideSeq</a>
                   </div>
                 </div>
               </div>
@@ -523,9 +445,7 @@ const HomePage = () => {
                     Discover tools for identifying CRISPR arrays in prokaryotic genomes.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">
-                      CRISPRfinder
-                    </span>
+                    <a href="https://crispr.i2bc.paris-saclay.fr/Server/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full hover:bg-purple-200">CRISPRfinder</a>
                   </div>
                 </div>
               </div>
@@ -567,9 +487,7 @@ const HomePage = () => {
                     Tools for managing laboratory workflows, data, and resources related to CRISPR experiments.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">
-                      Benchling CRISPR Tools
-                    </span>
+                    <a href="https://benchling.com/crispr" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full hover:bg-orange-200">Benchling CRISPR Tools</a>
                   </div>
                 </div>
               </div>
@@ -605,9 +523,7 @@ const HomePage = () => {
                     Tools for annotating CRISPR experiments and genomic regions.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-red-100 text-red-800 text-sm rounded-full">
-                      CRISPR-ERA
-                    </span>
+                    <a href="http://crispr-era.stanford.edu/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-red-100 text-red-800 text-sm rounded-full hover:bg-red-200">CRISPR-ERA</a>
                   </div>
                 </div>
               </div>
@@ -632,7 +548,7 @@ const HomePage = () => {
             How It Works
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Step 1 */}
             <motion.div
               className="flex flex-col items-center text-center"
@@ -642,7 +558,7 @@ const HomePage = () => {
                 1
               </div>
               <h3 className="text-lg font-semibold mb-2">
-                Select Species & Edit Goal
+                Select Species & Purpose
               </h3>
               <p className="text-gray-600">
                 Choose your organism and editing objective.
@@ -658,7 +574,7 @@ const HomePage = () => {
                 2
               </div>
               <h3 className="text-lg font-semibold mb-2">
-                View Best Tools Instantly
+                View Best Tools Quickly
               </h3>
               <p className="text-gray-600">
                 Results appear immediately from local cache.
@@ -674,26 +590,14 @@ const HomePage = () => {
                 3
               </div>
               <h3 className="text-lg font-semibold mb-2">
-                Open Tool or Copy Prompt
+                Open Tool
               </h3>
               <p className="text-gray-600">
                 One click to access or save for later.
               </p>
             </motion.div>
 
-            {/* Step 4 */}
-            <motion.div
-              className="flex flex-col items-center text-center"
-              variants={itemVariants}
-            >
-              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white text-xl font-bold mb-4">
-                4
-              </div>
-              <h3 className="text-lg font-semibold mb-2">Automatic Updates</h3>
-              <p className="text-gray-600">
-                Weekly refreshes with no manual action needed.
-              </p>
-            </motion.div>
+            
           </div>
         </div>
       </motion.section>
@@ -723,7 +627,7 @@ const HomePage = () => {
           </motion.p>
 
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12"
+            className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 justify-center"
             variants={containerVariants}
           >
             <motion.div className="text-center" variants={itemVariants}>
@@ -734,12 +638,7 @@ const HomePage = () => {
               <div className="text-3xl font-bold text-teal-600 mb-2">6</div>
               <p className="text-gray-600">Supported Species</p>
             </motion.div>
-            <motion.div className="text-center" variants={itemVariants}>
-              <div className="text-3xl font-bold text-teal-600 mb-2">
-                Weekly
-              </div>
-              <p className="text-gray-600">Database Updates</p>
-            </motion.div>
+            
           </motion.div>
         </div>
       </motion.section>
@@ -776,10 +675,7 @@ const HomePage = () => {
                 What organisms are supported?
               </AccordionTrigger>
               <AccordionContent>
-                We support 20+ model organisms including human, mouse, rat,
-                zebrafish, drosophila, C. elegans, yeast, and many plant
-                species. New organisms are added regularly based on community
-                requests.
+                We support organisms including Human, Mouse, Zebrafish, Bacteria, Archaea, and Other. New organisms are added regularly based on community requests.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
