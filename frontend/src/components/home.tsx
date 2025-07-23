@@ -634,7 +634,7 @@ const HomePage = () => {
               <p className="text-gray-600">Curated Tools</p>
             </motion.div>
             <motion.div className="text-center" variants={itemVariants}>
-              <div className="text-3xl font-bold text-teal-600 mb-2">6</div>
+              <div className="text-3xl font-bold text-teal-600 mb-2">4+</div>
               <p className="text-gray-600">Supported Species</p>
             </motion.div>
             
