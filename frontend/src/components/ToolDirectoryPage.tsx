@@ -18,10 +18,9 @@ const toolsData: CrisprTool[] = [
   {
     name: "CRISPResso2",
     species: ["Human", "Mouse", "Other"],
-    purpose: ["Gene Editing Analysis"],
-    summary:
-      "A software tool for analyzing genome editing outcomes from CRISPR experiments.",
-    external_link: "https://crispresso.pinellolab.partners.org/",
+    purpose: ["Editing Analysis"],
+    summary: "Pipeline for analyzing genome editing outcomes (indels, HDR, base edits) from sequencing data.",
+    external_link: "https://crispresso2.pinellolab.org/"
   },
   {
     name: "Benchling CRISPR Tools",
@@ -48,12 +47,12 @@ const toolsData: CrisprTool[] = [
     external_link: "http://www.rgenome.net/cas-offinder/",
   },
   {
-    name: "CRISPR-DO",
+    name: "CRISpick",
     species: ["Human", "Mouse"],
-    purpose: ["Design"],
+    purpose: ["Guide Design"],
     summary:
-      "CRISPR Design Online — tool for efficient guide RNA design with off-target prediction.",
-    external_link: "http://crispr-do.org/",
+      "CRISPick, developed by the Broad Institute, ranks and picks candidate CRISPRko/a/i sgRNA sequences to maximize on-target activity for target(s) provided",
+    external_link: "https://portals.broadinstitute.org/gppx/crispick/public",
   },
   {
     name: "GuideScan",
@@ -77,7 +76,7 @@ const toolsData: CrisprTool[] = [
     purpose: ["Guide RNA Design"],
     summary:
       "Identifies CRISPR target sites and evaluates off-target potential.",
-    external_link: "https://www.rgenome.net/casfinder/",
+    external_link: "https://crisprcas.i2bc.paris-saclay.fr/CrisprCasFinder/Index",
   },
   {
     name: "CRISPOR",
@@ -101,7 +100,7 @@ const toolsData: CrisprTool[] = [
     purpose: ["Off-target Analysis"],
     summary:
       "Experimental and computational pipeline to identify off-target cleavage sites genome-wide.",
-    external_link: "https://www.guideseq.org/",
+    external_link: "https://bioconductor.org/packages/release/bioc/html/GUIDEseq.html",
   },
   {
     name: "CRISPRscan",
@@ -125,15 +124,15 @@ const toolsData: CrisprTool[] = [
     summary:
       "Extension of CRISPResso for pooled CRISPR screening data analysis.",
     external_link:
-      "https://crispresso.pinellolab.partners.org/submission/pooled",
+      "https://crispresso2.pinellolab.org/submission/pooled",
   },
   {
-    name: "CRISPR-RT",
+    name: "CRISPR-FOCUS",
     species: ["Human", "Mouse"],
     purpose: ["Guide RNA Design"],
     summary:
-      "A tool specifically designed for CRISPR RNA targeting efficiency prediction.",
-    external_link: "http://bioinfolab.miamioh.edu/CRISPR-RT/",
+      "A web-based platform to search and prioritize sgRNAs for CRISPR screening experiments",
+    external_link: "http://cistrome.org/crispr-focus/",
   },
   {
     name: "CRISPy-web",
@@ -144,19 +143,19 @@ const toolsData: CrisprTool[] = [
     external_link: "http://crispy.secondarymetabolites.org/",
   },
   {
-    name: "DECKO",
+    name: "CRISPRme",
     species: ["Human", "Mouse"],
-    purpose: ["CRISPR Design"],
+    purpose: ["Off-target Prediction"],
     summary:
-      "A method and tool to design paired-guide RNAs for CRISPR deletion experiments.",
-    external_link: "http://decko.irbbarcelona.org/",
+      "CRISPRme is a tool for comprehensive off-target assessment that considers effects of human genetic variants.",
+    external_link: "http://crisprme.di.univr.it/",
   },
   {
-    name: "CRISPRfinder",
-    species: ["Bacteria", "Archaea"],
-    purpose: ["CRISPR Array Identification"],
-    summary: "Detects CRISPR repeat arrays in prokaryotic genomes.",
-    external_link: "https://crispr.i2bc.paris-saclay.fr/Server/",
+    name: "MAGeCK",
+    species: ["Human", "Mouse"],
+    purpose: ["Screening Analysis"],
+    summary: "Model-based Analysis of Genome-wide CRISPR-Cas9 Knockout (MAGeCK) for prioritizing single-guide RNAs, genes and HiTSelectpathways in genome-scale CRISPR/Cas9 knockout screens.",
+    external_link: "https://sourceforge.net/projects/mageck/",
   },
   {
     name: "Synthego ICE",
@@ -173,6 +172,13 @@ const toolsData: CrisprTool[] = [
     summary: "Fast and flexible CRISPR guide RNA design tool.",
     external_link: "https://github.com/mckennalab/FlashFry",
   },
+  {
+    name: "ScreenPro2",
+    species: ["Many"],
+    purpose: ["Screening Analysis"],
+    summary: "Flexible analysis of high-content CRISPR screening.",
+    external_link: "https://github.com/ArcInstitute/ScreenPro2",
+  }
 ];
 
 const ToolDirectoryPage = () => {

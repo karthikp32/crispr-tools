@@ -216,8 +216,7 @@ const HomePage = () => {
                 Curated CRISPR Toolkit
               </h3>
               <p className="text-gray-600">
-                Access 20 curated CRISPR tools with detailed descriptions and
-                usage guidelines.
+                Access 21 curated CRISPR tools with detailed descriptions.
               </p>
             </motion.div>
 
@@ -409,22 +408,22 @@ const HomePage = () => {
                     <a href="http://crispor.tefor.net/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full hover:bg-green-200">CRISPOR</a>
                     <a href="http://www.rgenome.net/cas-offinder/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full hover:bg-green-200">Cas-OFFinder</a>
                     <a href="https://cm.jefferson.edu/Off-Spotter/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full hover:bg-green-200">Off-Spotter</a>
-                    <a href="https://www.guideseq.org/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full hover:bg-green-200">GuideSeq</a>
+                    <a href="https://bioconductor.org/packages/release/bioc/html/GUIDEseq.html" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full hover:bg-green-200">GuideSeq</a>
                   </div>
                 </div>
               </div>
             </motion.div>
 
-            {/* Use Case: CRISPR Array Identification */}
+            {/* Use Case: Screening Analysis */}
             <motion.div
               className="bg-white p-8 rounded-xl shadow-sm border border-gray-100"
               variants={itemVariants}
             >
               <div className="flex items-start mb-4">
-                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-purple-100 mr-4 mt-1">
+                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-100 mr-4 mt-1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-purple-600"
+                    className="h-5 w-5 text-blue-600"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -433,19 +432,19 @@ const HomePage = () => {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                      d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 011-1h1a2 2 0 100-4H7a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
                     />
                   </svg>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">
-                    CRISPR Array Identification
+                    Screening Analysis
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    Discover tools for identifying CRISPR arrays in prokaryotic genomes.
+                    Flexible analysis of high-content CRISPR screening.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <a href="https://crispr.i2bc.paris-saclay.fr/Server/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full hover:bg-purple-200">CRISPRfinder</a>
+                    <a href="https://github.com/ArcInstitute/ScreenPro2" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full hover:bg-blue-200">ScreenPro2</a>
                   </div>
                 </div>
               </div>
@@ -635,7 +634,7 @@ const HomePage = () => {
               <p className="text-gray-600">Curated Tools</p>
             </motion.div>
             <motion.div className="text-center" variants={itemVariants}>
-              <div className="text-3xl font-bold text-teal-600 mb-2">6</div>
+              <div className="text-3xl font-bold text-teal-600 mb-2">4+</div>
               <p className="text-gray-600">Supported Species</p>
             </motion.div>
             
@@ -675,7 +674,7 @@ const HomePage = () => {
                 What organisms are supported?
               </AccordionTrigger>
               <AccordionContent>
-                We support organisms including Human, Mouse, Zebrafish, Bacteria, Archaea, and Other. New organisms are added regularly based on community requests.
+                We support organisms including Human, Mouse, Zebrafish, Bacteria, Archaea, and Other. New organisms are added based on community requests.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
