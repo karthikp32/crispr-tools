@@ -35,11 +35,11 @@
     "external_link": "https://guidescan.com/"
   },
   {
-    "name": "CRISPR-DO",
-    "species": ["Human", "Mouse"],
+    "name": "CRISpick",
+    "species": ["Human", "Mouse", "Rat"],
     "purpose": ["Guide RNA Design"],
-    "summary": "Designs guide RNAs efficiently with built-in off-target prediction.",
-    "external_link": "http://crispr-do.org/"
+    "summary": "CRISPick, developed by the Broad Institute, ranks and picks candidate CRISPRko/a/i sgRNA sequences to maximize on-target activity for target(s) provided.",
+    "external_link": "https://portals.broadinstitute.org/gppx/crispick/public"
   },
   {
     "name": "CCTop",
@@ -95,7 +95,7 @@
     "species": ["Human", "Mouse", "Other"],
     "purpose": ["Guide RNA Design"],
     "summary": "Finds CRISPR target sites and evaluates off-target potential.",
-    "external_link": "https://www.rgenome.net/casfinder/"
+    "external_link": "https://crisprcas.i2bc.paris-saclay.fr/CrisprCasFinder/Index"
   },
   {
     "name": "TIDE",
@@ -109,7 +109,7 @@
     "species": ["Human", "Mouse"],
     "purpose": ["Off-target Analysis"],
     "summary": "Experimental-computational pipeline for genome-wide off-target site detection.",
-    "external_link": "https://www.guideseq.org/"
+    "external_link": "https://bioconductor.org/packages/release/bioc/html/GUIDEseq.html"
   },
   {
     "name": "CRISPRessoPooled",
@@ -131,12 +131,5 @@
     "purpose": ["Guide RNA Design"],
     "summary": "Fast and flexible command-line tool for large-scale guide RNA design.",
     "external_link": "https://github.com/mckennalab/FlashFry"
-  },
-  {
-    "name": "CRISPRfinder",
-    "species": ["Bacteria", "Archaea"],
-    "purpose": ["CRISPR Array Identification"],
-    "summary": "Detects CRISPR repeat arrays in prokaryotic genomes.",
-    "external_link": "https://crispr.i2bc.paris-saclay.fr/Server/"
   }
 ]
