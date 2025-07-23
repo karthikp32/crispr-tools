@@ -216,8 +216,7 @@ const HomePage = () => {
                 Curated CRISPR Toolkit
               </h3>
               <p className="text-gray-600">
-                Access 20 curated CRISPR tools with detailed descriptions and
-                usage guidelines.
+                Access 21 curated CRISPR tools with detailed descriptions.
               </p>
             </motion.div>
 

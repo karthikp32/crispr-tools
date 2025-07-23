@@ -16,6 +16,13 @@ interface CrisprTool {
 // Sample data for the CRISPR tools
 const toolsData: CrisprTool[] = [
   {
+    name: "CRISPResso2",
+    species: ["Human", "Mouse", "Other"],
+    purpose: ["Editing Analysis"],
+    summary: "Pipeline for analyzing genome editing outcomes (indels, HDR, base edits) from sequencing data.",
+    external_link: "https://crispresso2.pinellolab.org/"
+  },
+  {
     name: "Benchling CRISPR Tools",
     species: ["Human", "Mouse", "Other"],
     purpose: ["Design", "Analysis"],
