@@ -675,7 +675,7 @@ const HomePage = () => {
                 What organisms are supported?
               </AccordionTrigger>
               <AccordionContent>
-                We support organisms including Human, Mouse, Zebrafish, Bacteria, Archaea, and Other. New organisms are added regularly based on community requests.
+                We support organisms including Human, Mouse, Zebrafish, Bacteria, Archaea, and Other. New organisms are added based on community requests.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
