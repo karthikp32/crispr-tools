@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Filter } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import CrisprToolsGrid from "./CrisprToolsGrid";
 import FilterControls from "./FilterControls";
 
@@ -277,6 +278,36 @@ const ToolDirectoryPage = () => {
               toolCount={filteredTools.length}
               clearFilters={handleClearFilters}
             />
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+          className="mb-8"
+        >
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-4 bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-white/30 shadow-sm">
+            <div className="text-center lg:text-left">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Help Us Improve
+              </h3>
+              <p className="text-sm text-gray-600 max-w-md">
+                Know of a CRISPR tool that's missing? Have suggestions for
+                improvements? I'd love to hear from you.
+              </p>
+            </div>
+            <Button
+              className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-medium px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-0 whitespace-nowrap"
+              onClick={() =>
+                window.open(
+                  "https://docs.google.com/forms/d/e/1FAIpQLSf4jB_d4k6_gEXHgC2JHJ3W-VAbNcTct9GBlQa1xc6G3DH3Kw/viewform?usp=header",
+                  "_blank",
+                )
+              }
+            >
+               Suggest a Tool / Give Feedback
+            </Button>
           </div>
         </motion.div>
 
