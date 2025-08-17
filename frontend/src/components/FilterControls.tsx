@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { usePostHog } from "posthog-js/react";
 import { Check, ChevronDown } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -32,6 +33,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({
   toolCount = 0,
   clearFilters = () => {},
 }) => {
+  const posthog = usePostHog();
   const [purposeOpen, setPurposeOpen] = useState(false);
   const [speciesOpen, setSpeciesOpen] = useState(false);
 
@@ -40,6 +42,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({
       onPurposeChange(selectedPurposes.filter((p) => p !== purpose));
     } else {
       onPurposeChange([...selectedPurposes, purpose]);
+      posthog.capture("purpose_selected", { purpose: purpose });
     }
   };
 
@@ -48,6 +51,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({
       onSpeciesChange(selectedSpecies.filter((s) => s !== speciesItem));
     } else {
       onSpeciesChange([...selectedSpecies, speciesItem]);
+      posthog.capture("species_selected", { species: speciesItem });
     }
   };
 
