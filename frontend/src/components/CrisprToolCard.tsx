@@ -1,4 +1,5 @@
 import React from "react";
+import { usePostHog } from "posthog-js/react";
 import {
   Card,
   CardContent,
@@ -48,6 +49,16 @@ const CrisprToolCard = ({
   summary = "A summary description of the CRISPR tool and its capabilities.",
   external_link = "https://example.com",
 }: CrisprToolCardProps) => {
+  const posthog = usePostHog();
+
+  const handleVisitTool = () => {
+    posthog.capture("visit_tool_button_clicked", {
+      tool_name: name,
+      external_link: external_link,
+    });
+    window.open(external_link, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <Card className="h-full flex flex-col bg-white/80 backdrop-blur-sm dark:bg-gray-800/80 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:scale-105 border-0 shadow-lg rounded-2xl group">
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-transparent to-purple-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -91,9 +102,7 @@ const CrisprToolCard = ({
         <Button
           variant="outline"
           className="w-full flex items-center justify-center gap-2 text-sm h-11 rounded-xl border-2 bg-gradient-to-r from-blue-50 to-purple-50 hover:from-blue-100 hover:to-purple-100 border-blue-200 hover:border-blue-300 text-blue-700 hover:text-blue-800 font-medium transition-all duration-200 shadow-sm hover:shadow-md"
-          onClick={() =>
-            window.open(external_link, "_blank", "noopener,noreferrer")
-          }
+          onClick={handleVisitTool}
         >
           <ExternalLink size={16} />
           Visit Tool

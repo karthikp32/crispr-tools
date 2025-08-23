@@ -51,7 +51,7 @@ const HomePage = () => {
     });
 
     setFilteredTools(filtered);
-  }, [selectedSpecies, selectedPurposes]);
+  }, [selectedSpecies, selectedPurposes, toolsData]);
 
   // Handle filter changes
   const handleSpeciesChange = (species: string[]) => {
@@ -104,6 +104,7 @@ const HomePage = () => {
             selectedPurposes={selectedPurposes}
             onSpeciesChange={handleSpeciesChange}
             onPurposeChange={handlePurposeChange}
+            toolCount={filteredTools.length}
             onClearFilters={handleClearFilters}
           />
         </motion.div>
