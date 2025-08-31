@@ -87,6 +87,48 @@ const toolsData: CrisprTool[] = [
       "Web tool for designing optimal CRISPR guide RNAs and evaluating potential off-targets.",
     external_link: "http://crispor.tefor.net/",
   },
+    {
+    "name": "ViennaRNA Package",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["RNA Folding", "RNA-RNA Interaction Prediction"],
+    "summary": "A comprehensive suite for RNA secondary structure analysis, including minimum free energy predictions, RNA-RNA interactions, and visualization tools.",
+    "external_link": "https://www.tbi.univie.ac.at/RNA/"
+  },
+  {
+    "name": "LinearFold",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["RNA Secondary Structure Prediction", "RNA-RNA Interaction Prediction"],
+    "summary": "Fast, linear-time algorithm for predicting RNA secondary structures, optimized for speed and large-scale predictions.",
+    "external_link": "https://github.com/LinearFold/LinearFold"
+  },
+  {
+    "name": "Sfold",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["RNA Structure Ensemble Prediction", "Target Accessibility Assessment"],
+    "summary": "Predicts RNA secondary structures using ensemble sampling and evaluates target accessibility, aiding rational design of gRNAs.",
+    "external_link": "https://github.com/Ding-RNA-Lab/Sfold"
+  },
+  {
+    "name": "CRISPR-Cas-Docker",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["RNA-Cas Protein Docking", "Interaction Modeling"],
+    "summary": "Web-based tool for in silico docking of CRISPR RNAs onto Cas proteins, predicting RNA-protein interactions to aid gRNA design.",
+    "external_link": "https://github.com/hshimlab/CRISPR-Cas-Docker"
+  },
+  {
+    "name": "CCLMoff",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["Off-Target Prediction (Cas9)"],
+    "summary": "Deep learning framework for predicting off-target effects in CRISPR/Cas9 systems using RNA sequence and genomic context.",
+    "external_link": "https://github.com/duwa2/CCLMoff"
+  },
+  {
+    "name": "Freiburg RNA Tools",
+    "species": ["Human", "Mouse", "Other"],
+    "purpose": ["RNA Sequence-Structure Alignment", "Interaction Prediction"],
+    "summary": "Collection of RNA analysis tools including sequence-structure alignments and interaction predictions; partially CRISPR-relevant.",
+    "external_link": "https://rna.informatik.uni-freiburg.de/"
+  },
   {
     name: "TIDE",
     species: ["Human", "Mouse", "Other"],
