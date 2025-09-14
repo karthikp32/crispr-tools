@@ -1,127 +1,127 @@
-CRISPR-Tools Sales Agent Design
-High-Level Architecture
+# CRISPR-Tools Sales Agent Design
+
+> **Overview:** A comprehensive sales agent designed to discover, validate, and engage CRISPR researchers through personalized outreach.
+
+## High-Level Architecture
 
 Single Sales Agent implementing two subroutines:
 
-Lead Finding Agent – discovers and validates new leads.
+- **🔍 Lead Finding Agent** – discovers and validates new leads
+- **📧 Lead Emailing Agent** – drafts, verifies, and sends cold emails
 
-Lead Emailing Agent – drafts, verifies, and sends cold emails.
+### 🎯 Weekly Targets
+- ~50 new target customers emailed per week
+- ~50–100 model prompts per week (batched for efficiency)
 
-Designed to run weekly:
+## 🛠️ Core Components
 
-~50 new target customers emailed per week.
+| Component | Choice for Free/Effective Use |
+|-----------|------------------------------|
+| **🤖 Model** | **GPT‑4o-mini** (OpenAI free-tier via ChatGPT or free API credits) for lead evaluation, relevance scoring, and email drafting.<br/>*Optionally:* Claude Instant Free or Gemini/Bard free tier for web search and summarization. |
+| **🔧 Tools** | • **Google Sheets** – memory / CRM, free<br/>• **Gmail** (separate contact@crispr-tools.com) – email sending<br/>• **Hunter.io free tier** – email discovery<br/>• **MailTester** / free verification tool – validate emails<br/>• **Requests + BeautifulSoup** – scrape About/Contact pages |
+| **📝 Instructions** | Detailed prompt instructions for:<br/>• Finding relevant researchers<br/>• Filtering by target fit<br/>• Drafting personalized cold emails<br/>• Formatting output as JSON for Sheets |
+| **🛡️ Guardrails** | • Ensure email is professional, polite, safe, and spam-free<br/>• Max 120–150 words per email<br/>• Use personalization (name, organization, role)<br/>• Avoid sensitive or inappropriate content |
+## 🔍 Lead Finding Agent Routine
 
-~50–100 model prompts per week (batched for efficiency).
+### 1. 🌐 Web/Research Prompting
 
-Core Components
-Component	Choice for Free/Effective Use
-Model	GPT‑4o-mini (OpenAI free-tier via ChatGPT or free API credits) for lead evaluation, relevance scoring, and email drafting.
-Optionally: Claude Instant Free or Gemini/Bard free tier for web search and summarization.
-Tools	Google Sheets – memory / CRM, free.
-Gmail (separate contact@crispr-tools.com
-) – email sending.
-Hunter.io free tier – email discovery.
-MailTester / free verification tool – validate emails.
-Requests + BeautifulSoup – scrape About/Contact pages.
-Instructions	Detailed prompt instructions for:
-- Finding relevant researchers.
-- Filtering by target fit.
-- Drafting personalized cold emails.
-- Formatting output as JSON for Sheets.
-Guardrails	- Ensure email is professional, polite, safe, and spam-free.
-- Max 120–150 words per email.
-- Use personalization (name, organization, role).
-- Avoid sensitive or inappropriate content.
-Lead Finding Agent Routine
+**GPT‑4o-mini + Gemini/Bard or Claude Instant:**
 
-Web/Research Prompting
+```prompt
+"Find 50 gene editing researchers or professionals in academia, biotech, and startups relevant to CRISPR."
+```
 
-GPT‑4o-mini + Gemini/Bard or Claude Instant:
+**Output structured as JSON:** 
+```json
+{
+  "Name": "string",
+  "Org": "string", 
+  "Role": "string",
+  "Status": "ready"
+}
+```
 
-“Find 50 gene editing researchers or professionals in academia, biotech, and startups relevant to CRISPR.”
+### 2. ✅ Lead Verification
 
-Output structured as JSON: Name | Org | Role | Status=ready.
+Prompt GPT-4o-mini to score leads on relevance:
+```prompt
+"Would this person find https://www.crispr-tools.com useful?"
+```
 
-Lead Verification
+### 3. 📧 Email Discovery
 
-Prompt GPT-4o-mini to score leads on relevance (“Would this person find https://www.crispr-tools.com
- useful?”).
+- Use **Hunter.io free tier** for public email search
+- **Fallback:** scrape organization websites (About/Contact pages) using requests + BeautifulSoup
+- **Generate naive guesses:** `first.last@org.com` if necessary
 
-Email Discovery
+### 4. ✔️ Email Validation
 
-Use Hunter.io free tier for public email search.
+Verify using **MailTester** or similar free tools
 
-Fallback: scrape organization websites (About/Contact pages) using requests + BeautifulSoup.
+### 5. 💾 CRM / Memory
 
-Generate naive guesses: first.last@org.com if necessary.
+Add leads to **Google Sheets** with columns:
+```
+Name | Org | Role | Email | Status (Status=ready)
+```
 
-Email Validation
+## 📧 Lead Emailing Agent Routine
 
-Verify using MailTester or similar free tools.
+### 1. 🎯 Identify Leads Not Emailed
 
-CRM / Memory
+Filter **Google Sheet** where `Status=ready`
 
-Add leads to Google Sheets with columns:
-Name | Org | Role | Email | Status (Status=ready).
+### 2. ✍️ Draft Personalized Emails
 
-Lead Emailing Agent Routine
+Prompt **GPT‑4o-mini** to generate a 120-word email per lead:
 
-Identify Leads Not Emailed
+- Include **Name, Org, Role**
+- Introduce **CRISPR-Tools** as free directory
+- Output as plain text
 
-Filter Google Sheet where Status=ready.
-
-Draft Personalized Emails
-
-Prompt GPT‑4o-mini to generate a 120-word email per lead:
-
-Include Name, Org, Role.
-
-Introduce CRISPR-Tools as free directory.
-
-Output as plain text.
-
-Guardrails
+### 3. 🛡️ Guardrails
 
 Verify emails are professional, polite, safe.
 
-Optionally prompt GPT-4o-mini with:
+**Optionally prompt GPT-4o-mini with:**
+```prompt
+"Check this email and return OK if safe and professional, else rewrite."
+```
 
-“Check this email and return OK if safe and professional, else rewrite.”
+### 4. 🚀 Send Emails
 
-Send Emails
+- Use **Gmail API / Google Apps Script** to send in small batches from `contact@crispr-tools.com`
+- Respect Gmail limits (100/day free, 500/day Workspace)
 
-Use Gmail API / Google Apps Script to send in small batches from contact@crispr-tools.com.
+### 5. 📊 Update Sheet
 
-Respect Gmail limits (100/day free, 500/day Workspace).
+Mark `Status=sent`
 
-Update Sheet
+## 📊 Back-of-the-Envelope Scaling
 
-Mark Status=sent.
+| Metric | Estimate |
+|--------|----------|
+| 📈 Leads added weekly | 50–100 |
+| 📧 Emails sent weekly | 50 |
+| 🤖 Model prompts | 50–100 (batched in chunks of 5–10 leads per prompt) |
+| 🆓 Tools / free-tier limits | Gmail: 100/day, Hunter.io: 25 searches/mo, GPT‑4o-mini: free ChatGPT or free API credits |
 
-Back-of-the-Envelope Scaling
-Metric	Estimate
-Leads added weekly	50–100
-Emails sent weekly	50
-Model prompts	50–100 (batched in chunks of 5–10 leads per prompt)
-Tools / free-tier limits	Gmail: 100/day, Hunter.io: 25 searches/mo, GPT‑4o-mini: free ChatGPT or free API credits
-Implementation Notes / Free Optimization
+## 💡 Implementation Notes / Free Optimization
 
-Batching: Feed 5–10 leads per prompt to GPT to save tokens.
+- **🔄 Batching:** Feed 5–10 leads per prompt to GPT to save tokens
+- **🔍 Hybrid Search:** Use Gemini/Bard free-tier for live web research; feed results to GPT‑4o-mini for extraction
+- **🛡️ Email Safety:** Always run guardrail prompt before sending
+- **📧 Separate email account:** Keep your personal Gmail safe, use `contact@crispr-tools.com`
+- **⚠️ Error handling:** Skip leads with invalid emails or duplicates in Sheets
+- **🛠️ Manual fallback:** Small-scale scraping + model filtering allows you to run everything without paying for APIs, staying within free-tier limits
 
-Hybrid Search: Use Gemini/Bard free-tier for live web research; feed results to GPT‑4o-mini for extraction.
+> **💡 Key Insight:** This design maximizes free usage while being effective, safe, and automatable.
 
-Email Safety: Always run guardrail prompt before sending.
+## 🔄 Workflow Diagram
 
-Separate email account: Keep your personal Gmail safe, use contact@crispr-tools.com.
+Here's a clear high-level diagram of your CRISPR-Tools Sales Agent workflow, optimized for free-tier use:
 
-Error handling: Skip leads with invalid emails or duplicates in Sheets.
-
-Manual fallback: Small-scale scraping + model filtering allows you to run everything without paying for APIs, staying within free-tier limits.
-
-This design maximizes free usage while being effective, safe, and automatable.
-
-Here’s a clear high-level diagram of your CRISPR-Tools Sales Agent workflow, optimized for free-tier use:
-
+```
                          ┌───────────────────────────┐
                          │       Start / Weekly      │
                          └────────────┬──────────────┘
@@ -181,17 +181,19 @@ Here’s a clear high-level diagram of your CRISPR-Tools Sales Agent workflow, o
                          ┌───────────────────────────┐
                          │          End              │
                          └───────────────────────────┘
+```
 
-Flow Highlights
+## 🔗 Flow Highlights
 
-Lead Finding Agent:
+### 🔍 Lead Finding Agent:
+**Web search** (PubMed, Bard/Gemini) → **GPT verification** → **Hunter.io/email scraping** → **email validation** → **Google Sheet**
 
-Web search (PubMed, Bard/Gemini) → GPT verification → Hunter.io/email scraping → email validation → Google Sheet.
+### 📧 Lead Emailing Agent:
+**Filter Status=ready** → **GPT drafts personalized email** → **guardrails check** → **send via Gmail** → **update Sheet**
 
-Lead Emailing Agent:
+### 🔄 Weekly Loop:
+**Add ~50 leads, send ~50 emails, repeat weekly**
 
-Filter Status=ready → GPT drafts personalized email → guardrails check → send via Gmail → update Sheet.
+---
 
-Weekly Loop:
-
-Add ~50 leads, send ~50 emails, repeat weekly.
+> **📋 Summary:** This MDX document provides a comprehensive, visually-enhanced guide for implementing a CRISPR-Tools sales automation system using free-tier tools and services.
