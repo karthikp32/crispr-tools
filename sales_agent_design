@@ -1,6 +1,14 @@
 Sales Agent Design: 
 
+Goals:
+The Sales Agent for CRISPR Tools will try to find leads that could be target customers for https://www.crispr-tools.com/ and send out cold emails.
+
+High-Level Architecture: 
 The Sales Agent for CRISPR Tools will be broken down into Lead Finding Agent and Lead Emailing Agent. I will try to implement these functionalities through a single Sales Agent first.
+
+Back of the Envelope Calculation: 
+~50-100 prompts to model sent 1x per week initially
+50 new target customers emailed weekly
 
 Core Components: 
 
