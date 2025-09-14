@@ -11,6 +11,7 @@ Core Components:
 3) Instructions
 
 4) Guardrails
+Validate that each personalized email is safe, professional, and doesn't have any inappropriate content.
 
 Lead Finding Agent Routine:
 1) Prompt GPT‑4o-mini or another models finds 50 gene editing researchers or professionals with similar jobs across academia, biotech, and startups.
@@ -22,5 +23,6 @@ Lead Finding Agent Routine:
 Lead Emailing Agent Routine:
 6) Figure out which people have not been emailed yet
 7) Prompt a model to generate personalized email for each individual
+
 8) Send emails in batches from contact@crispr-tools.com email
 9) Update Status in Spreadsheet
