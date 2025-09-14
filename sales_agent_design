@@ -1,0 +1,26 @@
+Sales Agent Design: 
+
+The Sales Agent for CRISPR Tools will be broken down into Lead Finding Agent and Lead Emailing Agent. I will try to implement these functionalities through a single Sales Agent first.
+
+Core Components: 
+
+1) Model 
+
+2) Tools
+
+3) Instructions
+
+4) Guardrails
+
+Lead Finding Agent Routine:
+1) Prompt GPT‑4o-mini or another models finds 50 gene editing researchers or professionals with similar jobs across academia, biotech, and startups.
+2) Use a model to evaluate and verify these are people who would actually find https://www.crispr-tools.com/ useful
+3) Find the emails of these people
+4) Verify these emails are valid using a service like MailTester
+5) Add Name,	Org,	Role,	Email,	Status, of new people to spreadsheets
+
+Lead Emailing Agent Routine:
+6) Figure out which people have not been emailed yet
+7) Prompt a model to generate personalized email for each individual
+8) Send emails in batches from contact@crispr-tools.com email
+9) Update Status in Spreadsheet
