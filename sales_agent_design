@@ -23,6 +23,6 @@ Lead Finding Agent Routine:
 Lead Emailing Agent Routine:
 6) Figure out which people have not been emailed yet
 7) Prompt a model to generate personalized email for each individual
-
+8) Ensure that guardrails checks that each personalized email is safe, professional, and doesn't have any inappropriate content.
 8) Send emails in batches from contact@crispr-tools.com email
 9) Update Status in Spreadsheet
