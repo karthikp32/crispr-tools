@@ -15,7 +15,7 @@ Validate that each personalized email is safe, professional, and doesn't have an
 
 Lead Finding Agent Routine:
 1) Prompt GPT‑4o-mini or another models finds 50 gene editing researchers or professionals with similar jobs across academia, biotech, and startups.
-2) Use a model to evaluate and verify these are people who would actually find https://www.crispr-tools.com/ useful
+2) Use a model to evaluate and verify these are people who would actually find https://www.crispr-tools.com/ useful. Also use free tier of Hunter.io.
 3) Find the emails of these people. Go to website of where these people work and look at About pages and Contact pages to figure out the email
 4) Verify these emails are valid using a service like MailTester
 5) Add Name,	Org,	Role,	Email,	Status, of new people to spreadsheets
