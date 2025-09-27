@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+openai
+google-api-python-client
+gspread
+oauth2client

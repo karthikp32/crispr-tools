@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lead-finding-agent:
+    build: .
+    container_name: lead-finding-agent
+    volumes:
+      - ./crispr_sales_agent:/app
+    working_dir: /app
+
+  lead-emailing-agent:
+    build: .
+    container_name: lead-emailing-agent
+    volumes:
+      - ./crispr_sales_agent:/app
+    working_dir: /app
